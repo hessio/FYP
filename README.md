@@ -15,5 +15,15 @@ This notebook reads the "chicago.txt" file or the "las-vegas.txt" text file base
 The file named "Experiment" will read from the file .csv file created by the previous notebook. The script will execute the experiment comparing the Mean Review helpfulness and the three different recommendation methods (Classification, Date and Random). Similarly, it will execute the experiment to get the results of the percentage of helpful reviews recommended by the recommender for each recommender. The results of the tests are printed as standard output in the notebook. 
 
 
+### las-vegas_vals_df.csv
 
+This file contains the helpfulness score for the every row of the data frame. I used this file to store this while I did the classification of the reviews. The random classifier does not accept float numbers for training so I had to use integers. I used this file however to hold the scores while I was using the standard 1 or 0 for classification.
+
+### vals_df.csv
+
+The same as above applies for this file. This file is the helpfulness scores of the Chicago dataset whereas the las-vegas_vals_df.csv is the helpfulness scores for the Las-Vegas dataset.
+
+### reviews_file_chicago.txt and reviews_file_las-vegas.txt 
+
+This is a list of all the reviews as strings. I used the reviews a few times to do different calculations so I found it easier to just write them to a file than parsing the large chicago.txt and las-vegas.txt files for the reviews as strings of text every time I wanted to do some small computations.
 
